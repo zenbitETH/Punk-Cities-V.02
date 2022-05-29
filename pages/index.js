@@ -1,8 +1,11 @@
+import Layout from "../components/Layout";
+
 import Image from "next/image"
 import PC from "../assets/punkcities.png"
 
 export default function Home() {
   return (
+    <Layout home={true}>
     <div className="flex min-h-screen flex-col items-center justify-center">
     <main className="flex w-full flex-1 flex-col items-center justify-center text-center">
       <div className="grid xl:grid-cols-2 mt-36 px-10">
@@ -41,5 +44,6 @@ export default function Home() {
       
     </main>
   </div>
+  </Layout>
   )
 }
