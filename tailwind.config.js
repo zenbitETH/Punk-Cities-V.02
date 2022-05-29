@@ -65,7 +65,7 @@ module.exports = {
               
               glass: {
                   900: "#19191a00",
-                  100: "#19191a71",
+                  100: "#19191a41",
                   200: "#ffffff20",
                   300: "#ffffff71",
                   400: "#fdb04e00",
@@ -104,11 +104,6 @@ module.exports = {
           container: {
               center: true,
               padding: "1rem",
-              screens: {
-                  lg: "1124px",
-                  xl: "1124px",
-                  "2xl": "1124px",
-              },
           },
       },
   },

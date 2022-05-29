@@ -7,6 +7,12 @@
 .joinBG {
   @apply 
   bg-glass-100 rounded-lg p-5 
-  cursor-pointer hover:bg-solar-100 hover:text-night-100
+  cursor-pointer hover:bg-solar-100 hover:text-night-100 hover:animate-pulse
+}
+
+.homeIcon {
+  @apply
+  text-9xl
+  py-10
 }
 
