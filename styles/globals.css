@@ -12,7 +12,133 @@
 
 .homeIcon {
   @apply
-  text-9xl
+  text-8xl
   py-10
 }
 
+/* Hud */ 
+.top-hud { 
+  @apply xl:mx-40 qhd:mx-96 
+  mx-5 fixed grid  grid-cols-3 grid-rows-2 items-center top-0 left-0 right-0
+  rounded-b-lg
+  font-exo
+  text-white
+  text-sm
+  md:text-xl lg:text-2xl xl:text-2xl xl:grid-cols-4
+  border-none
+  z-20
+}
+
+.hud-wallet {
+  @apply p-1 
+  bg-glass-100 text-white text-center
+  col-span-3
+  xl:col-span-1 xl:rounded-bl-lg
+  hover:bg-glass-500
+  border-none
+  cursor-pointer
+  px-10
+}
+
+.hud1 {
+  @apply p-1 
+  bg-glass-100 text-center
+  rounded-bl-lg
+  xl:rounded-none
+  border-none
+  hover:bg-glass-500
+  cursor-pointer
+}
+
+.hud2 {
+  @apply p-1 
+  bg-glass-100 text-center
+  border-none
+  hover:bg-glass-500
+  cursor-pointer
+}
+
+.hud3 {
+  @apply p-1 
+  bg-glass-100 text-center
+  border-none
+  hover:bg-glass-500
+  cursor-pointer
+  rounded-br-lg
+}
+
+.left-hud { 
+  @apply
+  fixed grid grid-cols-2 fhd:grid-cols-1 fhd:grid-rows-3 items-center 
+  bottom-0 fhd:bottom-auto fhd:top-20 left-0
+  font-exo
+  font-medium
+  text-white
+  text-sm
+  md:text-xl lg:text-2xl xl:text-2xl 
+  border-none
+}
+
+.huda {
+  @apply p-1 
+  bg-glass-100 text-center text-white
+  hover:bg-glass-500
+  border-none
+  fhd:rounded-tr-lg
+  cursor-pointer
+  px-3
+}
+
+.hudb {
+  @apply p-1 
+  bg-glass-100 text-center text-white
+  border-none
+  cursor-pointer
+  rounded-tr-lg
+  fhd:rounded-none
+  fhd:rounded-br-lg
+  hover:bg-glass-500
+  px-3
+}
+
+.right-hud { 
+  @apply
+  fixed grid grid-cols-2 fhd:grid-cols-1 fhd:grid-rows-3 items-center
+  bottom-0 fhd:bottom-auto fhd:top-20 right-0
+  rounded-b-lg
+  font-exo
+  font-medium
+  text-white
+  text-sm
+  md:text-xl lg:text-2xl xl:text-2xl 
+  border-none
+  px-4
+}
+
+.hudc {
+  @apply p-1 
+  bg-glass-100 text-center
+  border-none
+  rounded-none
+  rounded-tl-lg
+  hover:bg-glass-600
+  cursor-pointer
+  px-3
+}
+
+.hudd {
+  @apply p-1 
+  bg-glass-100 text-center
+  border-none
+  hover:bg-glass-600
+  cursor-pointer
+  xl:rounded-bl-lg
+  px-3
+}
+
+.bigIcon {
+  @apply
+  text-xl text-center
+  fhd:text-5xl
+  xl:py-3
+}
