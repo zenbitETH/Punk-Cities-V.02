@@ -142,3 +142,33 @@
   fhd:text-5xl
   xl:py-3
 }
+
+.NewGame {
+ @apply
+ bg-solar-100
+ xl:mx-44 mt-12 p-10 rounded-lg
+ text-center text-2xl font-exo 
+ m-5 
+}
+
+.NewPlayer {
+  @apply
+  text-8xl
+  m-5
+}
+
+.inputs {
+  @apply
+  grid grid-cols-1 gap-2
+  my-5
+  text-base
+}
+
+.CreateAcc {
+  @apply 
+  bg-night-100
+  p-3 mx-20
+  rounded-lg
+  text-solar-100
+  hover:bg-cyber-100 hover:text-white hover:cursor-pointer
+}

@@ -27,7 +27,7 @@ const Layout = ({ children, home }) => {
       <main>{children}</main>
 
     <nav className="left-hud">
-        <Link href={``}>
+        <Link href="/NewGame">
           <a className="huda"><div className='bigIcon'>⛲</div> Nuevo Lugar</a>
         </Link>
 
