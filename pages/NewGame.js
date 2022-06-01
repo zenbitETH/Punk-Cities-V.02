@@ -3,17 +3,17 @@ import Layout from "../components/Layout";
 export default function NewGame() {
     
   return (
-    <Layout>
+    <Layout class="text-center content-center">
       <div class="NewGame">
         <div class="NewPlayer">🎮</div>
-        <div class="text-white text-4xl">Nuevo jugador</div>
+        <div class="text-night-100 text-4xl">Nuevo jugador</div>
         <div class="inputs">
-          <label class="text-left mt-3">Elige un nombre o apodo</label>
-          <input type="text" class="rounded-lg py-5 px-5" placeholder="https://twitter.com/YourAccount" />
-          <label class="text-left mt-3">Elige tu ciudad inicial</label>
-          <input type="text" class="rounded-lg py-5 px-5" placeholder="Mexico City" />        
-          <label class="text-left mt-3">Elige tu país inicial</label>
-          <input class="rounded-lg py-5 px-5" type="text" placeholder="Mexico" />
+          <label class="text-left mt-3 md:text-2xl">Elige un nombre o apodo</label>
+          <input type="text" class="rounded-lg py-5 px-5 md:text-xl" placeholder="https://twitter.com/YourAccount" />
+          <label class="text-left mt-3 md:text-2xl">Elige tu ciudad inicial</label>
+          <input type="text" class="rounded-lg py-5 px-5 md:text-xl" placeholder="Mexico City" />        
+          <label class="text-left mt-3 md:text-2xl">Elige tu país inicial</label>
+          <input class="rounded-lg py-5 px-5" type="text md:text-xl" placeholder="Mexico" />
         </div>
       
       <div
