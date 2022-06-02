@@ -31,7 +31,7 @@ const Layout = ({ children, home }) => {
           <a className="huda"><div className='bigIcon'>⛲</div> Nuevo Lugar</a>
         </Link>
 
-        <Link href={``}>
+        <Link href="/NewPlace">
           <a className="hudb"><div className='bigIcon'>🌇 </div>Mi ciudad</a>
         </Link>
     </nav>

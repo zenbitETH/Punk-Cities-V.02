@@ -151,7 +151,7 @@
  m-5
 }
 
-.NewPlayer {
+.NewIcon {
   @apply
   text-8xl
   m-5
@@ -164,6 +164,24 @@
   text-base
 }
 
+label {
+  @apply
+  text-left mt-3 md:text-2xl
+}
+
+select {
+  @apply 
+  rounded-tl-lg rounded-r-lg py-5 px-5 md:text-xl
+}
+
+
+
+
+input {
+  @apply
+  rounded-tl-lg rounded-r-lg py-5 px-5 md:text-xl
+}
+
 .CreateAcc {
   @apply 
   bg-night-100
@@ -172,3 +190,12 @@
   text-solar-100
   hover:bg-cyber-100 hover:text-white hover:cursor-pointer
 }
+
+.NewPlace {
+  @apply
+  bg-cyber-100
+  mx-5 md:max-w-2xl md:mx-auto mt-12 p-10 rounded-lg
+  text-center text-2xl font-exo content-center	
+  m-5
+ }
+
