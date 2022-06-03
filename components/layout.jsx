@@ -14,24 +14,28 @@ const Layout = ({ children, home }) => {
         <span> ⛲ </span>
         <span class="mx-2">20</span>
       </div>
-      <div class="hud2">
-        <span> ⚡ </span>
-        <span class="mx-2">20</span>
-      </div>
-      <div class="hud3">
-        <span> 💽 </span>
-        <span class="mx-2">12</span>
-      </div>
+      <Link href="/NewGame">
+        <a class="hud2">
+          <span> ⚡ </span>
+          <span class="mx-2">20</span>
+        </a>
+      </Link>
+      <Link href="/MyPlaces">
+        <a class="hud3">
+          <span> 💽 </span>
+          <span class="mx-2">12</span>
+        </a>
+      </Link>
     </nav>
 
-      <main>{children}</main>
+    <main>{children}</main>
 
     <nav className="left-hud">
-        <Link href="/NewGame">
+        <Link href="/NewPlace">
           <a className="huda"><div className='bigIcon'>⛲</div> Nuevo Lugar</a>
         </Link>
 
-        <Link href="/NewPlace">
+        <Link href="/MyPlaces">
           <a className="hudb"><div className='bigIcon'>🌇 </div>Mi ciudad</a>
         </Link>
     </nav>
