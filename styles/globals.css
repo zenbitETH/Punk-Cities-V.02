@@ -213,6 +213,14 @@ input {
   grid grid-cols-2 xl:grid-cols-3 gap-2 xl:grid-rows-4 xl:gap-3
  }
 
+ .AllPlaces {
+  @apply
+  bg-gray-500
+  xl:min-h-[600px] qhd:min-h-[1200px] p-5 rounded-lg
+  text-center text-2xl font-exo content-center	
+  grid grid-cols-2 md:grid-cols-4 fhd:grid-cols-7 qhd:grid-cols-10 qhd:grid-rows-6 gap-2 xl:grid-rows-4 xl:gap-3
+ }
+
 .Quest {
   @apply
   bg-night-100

@@ -40,7 +40,7 @@ const Layout = ({ children, home }) => {
         </Link>
     </nav>
     <nav className='right-hud'>
-        <Link href={``}>
+        <Link href="/AllPlaces">
           <a className="hudc"><div className='bigIcon'>🌎</div> Explorar</a>
         </Link>
     
