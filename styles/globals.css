@@ -112,7 +112,6 @@
   text-sm
   md:text-xl lg:text-2xl xl:text-2xl 
   border-none
-  px-4
 }
 
 .hudc {
@@ -124,6 +123,7 @@
   hover:bg-glass-600
   cursor-pointer
   px-3
+  xl:pr-5
 }
 
 .hudd {
@@ -134,6 +134,7 @@
   cursor-pointer
   xl:rounded-bl-lg
   px-3
+  xl:pr-5
 }
 
 .bigIcon {
@@ -174,9 +175,6 @@ select {
   rounded-tl-lg rounded-r-lg py-5 px-5 md:text-xl
 }
 
-
-
-
 input {
   @apply
   rounded-tl-lg rounded-r-lg py-5 px-5 md:text-xl
@@ -199,3 +197,57 @@ input {
   m-5
  }
 
+ .MyPlaces {
+  @apply
+  bg-solar-100
+  xl:min-h-[600px] fhd:min-h-[600px] p-5 rounded-lg xl:rounded-none xl:rounded-l-lg
+  text-center text-2xl font-exo 
+  grid grid-cols-2 xl:grid-cols-3 gap-2 xl:grid-rows-4 xl:gap-3
+ }
+
+ .MyPlaces2 {
+  @apply
+  bg-cyber-100
+  xl:min-h-[600px] fhd:min-h-[600px] p-5 rounded-lg xl:rounded-none xl:rounded-r-lg
+  text-center text-2xl font-exo content-center	
+  grid grid-cols-2 xl:grid-cols-3 gap-2 xl:grid-rows-4 xl:gap-3
+ }
+
+.Quest {
+  @apply
+  bg-night-100
+  rounded-lg
+  min-h-[150px] 
+  xl:min-h-[150px]
+  text-2xl text-white
+  content-center
+  p-6
+}
+
+.CityPL {
+ @apply
+ bg-glass-100 hover:bg-night-100
+ min-h-[150px]
+ xl:min-h-[150px]
+ rounded-lg
+ relative
+ cursor-pointer
+}
+
+.PLfooter {
+  @apply
+  absolute bottom-0
+  grid grid-cols-3
+  bg-night-100
+  rounded-b-lg
+  px-2 py-2
+  w-full
+  text-base text-white
+}
+
+.PLheader {
+  @apply
+  grid grid-cols-6
+  text-lg
+  text-white
+}
