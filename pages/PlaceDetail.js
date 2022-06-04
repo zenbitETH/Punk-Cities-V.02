@@ -1,14 +1,18 @@
 import Layout from "../components/Layout";
 import {useState} from "react";
 import VerifyModal from "../components/VerifyModal";
-import UpdateModal from "../components/VerifyModal";
+import UpgradeModal from "../components/UpgradeModal";
 import Image from "next/image"
 import tridi from "../assets/3dAssets/11-Library.png"
 
 export default function PlaceDetail() {
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const closeDialogModal = () => setIsDialogOpen(false);
-  const openDialogModal = () => setIsDialogOpen(true);
+  const [isVeDialogOpen, setIsVeDialogOpen] = useState(false);
+  const closeVeDialogModal = () => setIsVeDialogOpen(false);
+  const openVeDialogModal = () => setIsVeDialogOpen(true);
+
+  const [isUpDialogOpen, setIsUpDialogOpen] = useState(false);
+  const closeUpDialogModal = () => setIsUpDialogOpen(false);
+  const openUpDialogModal = () => setIsUpDialogOpen(true);
 
   return (
     <Layout class="text-center content-center">
@@ -43,10 +47,10 @@ export default function PlaceDetail() {
               */}
               {/*<a class="VerBt" href={`../VerifyPlace/${placeId}`}> */}
               
-                <button class="DetailBT xl:col-span-1 col-span-4" onClick={openDialogModal}>👍🏽 Verificar</button>
+                <button class="DetailBT xl:col-span-1 col-span-4" onClick={openVeDialogModal}>👍🏽 Verificar</button>
                 <VerifyModal
-                  isOpen={isDialogOpen}
-                  handleClose={closeDialogModal}
+                  isOpen={isVeDialogOpen}
+                  handleClose={closeVeDialogModal}
                   title="Take fotos to verify this place "
                 >
                 </VerifyModal>
@@ -59,13 +63,13 @@ export default function PlaceDetail() {
               </div>
               {/*<a class="VerBt" href={`../UpgradePlace/${placeId}`}> */}
               
-              <button class="DetailBT xl:col-span-1 col-span-4" onClick={openDialogModal}>⚡Depositar 💽</button>
-                <UpdateModal
-                  isOpen={isDialogOpen}
-                  handleClose={closeDialogModal}
+              <button class="DetailBT xl:col-span-1 col-span-4" onClick={openUpDialogModal}>⚡Depositar 💽</button>
+                <UpgradeModal
+                  isOpen={isUpDialogOpen}
+                  handleClose={closeUpDialogModal}
                   title="Deposit energy or chips to upgrade this place "
                 >
-                </UpdateModal>
+                </UpgradeModal>
 
             </div>
             
