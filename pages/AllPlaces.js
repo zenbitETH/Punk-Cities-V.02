@@ -1,9 +1,11 @@
 import Layout from "../components/layout";
 import Image from "next/image"
 import tridi from "../assets/3dAssets/11-Library.png"
+import Link from 'next/link'
 
 export default function AllPlaces() {
-    
+  
+
   return (
     <Layout class="text-center content-center">
         <div class="grid xl:mx-40 xl:gap-0 mx-5 gap-5 mt-10">
@@ -11,18 +13,20 @@ export default function AllPlaces() {
               <div class="Quest">
                 <div class="text-7xl pb-3">🌎</div>Todos los lugares
               </div>
-              <div class="CityPL">
-                <div class="PLheader">
-                  <div class="col-span-4">Verified Park</div>
-                  <div class="col-span-2"> Lv0</div>
+              <Link href={"./PlaceDetail"}>
+                <div class="CityPL">
+                  <div class="PLheader">
+                    <div class="col-span-4">Verified Park</div>
+                    <div class="col-span-2"> Lv0</div>
+                  </div>
+                  <div><Image src={tridi} height={150} width={150} alt="Punk Cities" /></div>
+                  <div class="PLfooter">
+                    <div class="">3/5👍</div>
+                    <div class="">1/2⚡</div>
+                    <div class="">2/2💽</div>
+                  </div>
                 </div>
-                <div><Image src={tridi} height={150} width={150} alt="Punk Cities" /></div>
-                <div class="PLfooter">
-                  <div class="">3/5👍</div>
-                  <div class="">1/2⚡</div>
-                  <div class="">2/2💽</div>
-                </div>
-              </div>
+              </Link>
               {/*
               {placeIdDetails.map((place, index) => (
                   <a class="CityPL" href={`./PlaceDetail/${index}`}>
