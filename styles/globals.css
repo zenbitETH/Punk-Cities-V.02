@@ -189,6 +189,15 @@ input {
   hover:bg-cyber-100 hover:text-white hover:cursor-pointer
 }
 
+.DetailBT {
+  @apply 
+  bg-glass-300
+  max-h-16 p-5
+  rounded-lg
+  text-night-100
+  hover:bg-cyber-100 hover:text-white hover:cursor-pointer
+}
+
 .NewPlace {
   @apply
   bg-cyber-100
@@ -219,6 +228,12 @@ input {
   xl:min-h-[600px] qhd:min-h-[1200px] p-5 rounded-lg
   text-center text-2xl font-exo content-center	
   grid grid-cols-2 md:grid-cols-4 fhd:grid-cols-7 qhd:grid-cols-10 qhd:grid-rows-6 gap-2 xl:grid-rows-4 xl:gap-3
+ }
+
+ .PlaceDetail {
+  @apply
+  grid grid-cols-10 grid-rows-6
+  xl:mx-40 rounded-lg p-5 font-exo text-center text-white
  }
 
 .Quest {
@@ -258,4 +273,18 @@ input {
   grid grid-cols-6
   text-lg
   text-white
+}
+
+.VerifyPl {
+  @apply
+  bg-gray-500
+  mx-5 md:max-w-2xl md:mx-auto mt-12 p-10 rounded-lg
+  text-center text-2xl font-exo content-center	
+  m-5
+}
+
+.verifyText {
+  @apply
+  text-solar-100 animate-pulse
+  text-3xl
 }
