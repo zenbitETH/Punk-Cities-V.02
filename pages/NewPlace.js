@@ -49,33 +49,33 @@ const formatPlaceType = placeInput => {
   if (placeInput === "⛲ Parque Público") {
     return "Parque Público";
   } else if (placeInput === "🛹 Skate Park") {
-    return "Bus Stop";
+    return "Skate Park";
   } else if (placeInput === "⚽ Cancha de Fut") {
-    return "City Hall";
+    return "Cancha de futbol";
   } else if (placeInput === "🏀 Cancha de Basket") {
-    return "Cityzen Theater";
+    return "Cancha de basket";
   } else if (placeInput === "😄 Juegos infantiles") {
-    return "Community center";
+    return "Juegos infantiles";
   } else if (placeInput === "🏋️‍♀️ Gym al aire libre") {
-    return "Fireman Station";
+    return "Gym al aire libre";
   } else if (placeInput === "🎭 Galeria de Arte / Museo") {
-    return "Hospital";
+    return "Galeria de Arte / Museo";
   } else if (placeInput === "🏟️ Estadio") {
-    return "Kid´s playground";
+    return "Estadio";
   } else if (placeInput === "🏖️ Playa") {
-    return "Landmark";
+    return "Playa";
   } else if (placeInput === "♻️ Punto de Reciclaje") {
-    return "Open-air gym";
+    return "Punto de Reciclaje";
   } else if (placeInput === "🚏 Parada de autobus") {
-    return "Police Station";
+    return "Parada de Autobus";
   } else if (placeInput === "📚 Biblioteca") {
-    return "Public Park";
+    return "Biblioteca";
   } else if (placeInput === "🎓 Universidad") {
-    return "Soccer court";
+    return "Universidad";
   } else if (placeInput === "⛪ Iglesia o Templo") {
-    return "Stadium";
+    return "Iglesia o Templo";
   } else if (placeInput === "🗳️ Oficina de gobierno") {
-    return "Temple";
+    return "Oficina de Gobierno";
   } else if (placeInput === "🌳 Árbol") {
     return "Árbol";
   } else {
