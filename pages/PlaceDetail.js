@@ -18,7 +18,7 @@ export default function PlaceDetail() {
     <Layout class="text-center content-center">
         <div class="PlaceDetail gap-5">
             <div class="xl:col-span-5 col-span-10 row-span-6">
-              <div class="grid grid-cols-4">
+              <div class="grid grid-cols-4 -mt-5">
                 <div class="col-span-3 text-2xl text-left py-10 rounded-lg ">{/*`${ipfsResponse?.name*/} Tipo de lugar / Nombre del lugar {/*ipfsResponse?.attributes[0].value}`*/}</div>
                 <div class="xl:text-4xl text-2xl bg-glass-500 rounded-br-lg rounded-tl-lg py-10 my-5">Nivel 1 {/*placeLevel ?? "NA"*/}</div>
               </div>
@@ -47,7 +47,7 @@ export default function PlaceDetail() {
               */}
               {/*<a class="VerBt" href={`../VerifyPlace/${placeId}`}> */}
               
-                <button class="DetailBT xl:col-span-1 col-span-4" onClick={openVeDialogModal}>👍🏽 Verificar</button>
+                <button class="DetailBT hover:bg-solar-100 hover:text-night-100 xl:col-span-1 col-span-4" onClick={openVeDialogModal}>👍🏽 Verificar</button>
                 <VerifyModal
                   isOpen={isVeDialogOpen}
                   handleClose={closeVeDialogModal}

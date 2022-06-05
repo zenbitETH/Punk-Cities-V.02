@@ -16,28 +16,29 @@ const VerifyModal = ({ isOpen, handleClose }) => {
           leaveTo="opacity-0"
         >
         <Dialog.Overlay className="fixed inset-0 bg-black/70 dark:bg-black/80">      
-            <div className="h-screen m-24 rounded-lg px-4 text-center text-white align-middle">
+            <div className="h-screen xl:m-24 rounded-lg xl:px-4 text-center text-white align-middle">
             <div class="VerifyPl">
-                <div class="NewIcon">👍</div>
-                <div class="text-white text-4xl">Verificar lugar</div>
-              <div class="text-left grid gap-5 grid-cols-2 text-xl">
-                <div>Tipo de lugar: <span class="verifyText"> test{/*ipfsResponse?.attributes[0].value*/}</span></div>
-                <div>Nombre: <span class="verifyText"> test{/*ipfsResponse?.name*/}</span></div>  
-                <div class="col-span-2">Dirección: <span class="verifyText"> test{/*ipfsResponse?.address*/}</span></div>
-                <div>Ciudad: <span class="verifyText"> test</span></div>
-                <div>Etiquetas: <span class="verifyText"> test{/*ipfsResponse?.tag*/}</span></div>
-                <div class="col-span-2">Registrado por: <span class="verifyText"> test{/*register*/}</span></div>
-                <label class="col-span-2 text-center">
+                <div class="NewIcon">👍🏽</div>
+                <div class="text-3xl">Verificar lugar</div>
+              <div class="text-left text-xl">
+                <div class="mt-3">Tipo de lugar: <span class="verifyText"> test{/*ipfsResponse?.attributes[0].value*/}</span></div>
+                <div class="mt-3">Nombre: <span class="verifyText"> test{/*ipfsResponse?.name*/}</span></div>  
+                <div class="mt-3">Dirección: <span class="verifyText"> test{/*ipfsResponse?.address*/}</span></div>
+                <div class="mt-3">Ciudad: <span class="verifyText"> test</span></div>
+                <div class="mt-3">Etiquetas: <span class="verifyText"> test{/*ipfsResponse?.tag*/}</span></div>
+                <div class="mt-3">Registrado por: <span class="verifyText"> test{/*register*/}</span></div>
+                <div class="text-center text-base mt-5">Sube una foto del lugar<input type="file"/></div>
+                <div class="text-center">
                     Elige tu recompensa por verificar:
-                  <select class="text-night-100" id="TypeOfPlace" type="text" placeholder="Park">
+                  <select class="text-night-100 text-base" id="TypeOfPlace" type="text" placeholder="Park">
                     <option disabled selected>
                       ¿Energia Solarpunk o Chips Cyberpunk?
                     </option>
                     <option>¡Quiero Chispas! (+1⚡)</option>
                     <option>¡Quiero Chips! (+1💽)</option>
                   </select>
-                </label>
-                <label class="col-span-2 text-center">Sube una foto del lugar<input type="file"/></label>
+                </div>
+                
               </div>
           {/* <label class="file">
             Take and upload a photo to IPFS

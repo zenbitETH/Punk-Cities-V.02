@@ -16,19 +16,50 @@ const UpdateModal = ({ isOpen, handleClose }) => {
           leaveTo="opacity-0"
         >
         <Dialog.Overlay className="fixed inset-0 bg-black/70 dark:bg-black/80">      
-          <div className="h-screen m-24 rounded-lg px-4 text-center text-white align-middle">
-            <div class="VerifyPl">
-                <div class="NewIcon">👍</div>
-                <div class="text-white text-4xl">Subir de nivel</div>
+          <div className="h-screen xl:m-24 rounded-lg xl:px-4 text-center text-white align-middle">
+            <div class="UpgradePl">
+                <div class="NewIcon">🌟</div>
+                <div class="text-white text-3xl">Subir de nivel</div>
+                
+                    <div class="grid grid-cols-2 gap-5">
+                      <div class="mt-5">
+                        <div class="xl:text-5xl mt-5">{/*energyPerPlaceId*/}1/2⚡<div class="text-lg">Chispas para subir de nivel</div></div>
+                        <div class="text-center mt-5">
+                          {/*<input type="number" placeholder="0" onChange={handleEnergyChange}></input> */}
+                          + 
+                          <input class="text-night-100 w-24" type="number" placeholder="0"></input>
+                          ⚡
+                        </div>
+                        {/*<div className="EnergyBt" onClick={depositEnergy}> */}
+                        <div className="UpdateBT ">
+                          Depositar ⚡
+                        </div>
+                      </div>
+                      <div class="mt-5">
+                        <div class="xl:text-5xl mt-5">{/*chipPerPlaceId*/}1/2💽<div class="text-lg">Chips para subir de nivel</div></div>
+                        <div class="text-center mt-5">
+                          {/*<input type="number" placeholder="0" onChange={handleChipChange}></input> */}
+                          + 
+                          <input class="text-night-100 w-24" type="number" placeholder="0"></input>
+                          💽
+                        </div>
+                        {/*<div className="ChipsBt" onClick={depositChip}> */}
+                        <div className="UpdateBT ">
+                        Depositar 💽
+                        </div>
+                      </div>
+                    </div>
 
+                    {/*<div class="LevelUnblock" type="submit" onClick={upgradePlace}> */}
+                    <div class="UpdateBT" type="submit">
+                    Subir a Nivel 2
+                    </div>
+                
                 {/* <label class="file">
                   Take and upload a photo to IPFS
                   <input type="file" />
                   <div class="UploadBt"> Upload to IPFS</div>
                 </label> */}
-                <div class="CreateAcc" type="submit">
-                  Subir a Nivel 2
-                </div>
             </div>
           </div>
         </Dialog.Overlay>
