@@ -154,7 +154,7 @@
 
 .NewIcon {
   @apply
-  text-8xl
+  xl:text-8xl text-2xl
   m-5
 }
 
@@ -183,18 +183,27 @@ input {
 .CreateAcc {
   @apply 
   bg-night-100
-  p-3 mx-20 mt-10
+  p-3 mt-10
   rounded-lg
   text-solar-100
   hover:bg-cyber-100 hover:text-white hover:cursor-pointer
 }
 
+.UpdateBT {
+  @apply 
+  bg-night-100
+  p-3 mt-10
+  rounded-lg
+  text-white
+  hover:bg-solar-100 hover:text-night-100 hover:cursor-pointer
+}
+
 .DetailBT {
   @apply 
-  bg-glass-300
+  bg-night-100
   max-h-16 p-5
   rounded-lg
-  text-night-100
+  text-white text-xl
   hover:bg-cyber-100 hover:text-white hover:cursor-pointer
 }
 
@@ -277,7 +286,15 @@ input {
 
 .VerifyPl {
   @apply
-  bg-gray-500
+  bg-solar-500 text-night-100
+  mx-5 md:max-w-2xl md:mx-auto mt-12 p-10 rounded-lg
+  text-center text-2xl font-exo content-center	
+  m-5
+}
+
+.UpgradePl {
+  @apply
+  bg-cyber-100 text-white
   mx-5 md:max-w-2xl md:mx-auto mt-12 p-10 rounded-lg
   text-center text-2xl font-exo content-center	
   m-5
@@ -285,6 +302,6 @@ input {
 
 .verifyText {
   @apply
-  text-solar-100 animate-pulse
+  text-cyber-100 animate-pulse
   text-3xl
 }
