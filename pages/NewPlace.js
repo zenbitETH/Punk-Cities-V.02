@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-require("dotenv").config();
+require(process.env.NEXT_PUBLIC_NFT_TOKEN)();
 
 const IPFS = require("ipfs-mini");
 const ipfs = new IPFS({ host: "ipfs.infura.io", port: 5001, protocol: "https" });
