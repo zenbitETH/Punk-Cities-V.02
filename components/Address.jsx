@@ -1,6 +1,6 @@
 import { shortenAddress } from "../lib/shortenAddress";
 import { useState, useEffect } from "react";
-import { useMoralis } from "react-moralis";
+import { use } from "react-moralis";
 
 const Check = () => (
   <svg
