@@ -3,11 +3,11 @@ import Layout from "../components/Layout";
 export default function NewGame() {
     
   return (
-    <Layout class="text-center content-center">
-      <div class="NewGame">
-        <div class="NewIcon">🎮</div>
-        <div class="text-night-100 text-4xl">Nuevo jugador</div>
-        <div class="inputs">
+    <Layout className="text-center content-center">
+      <div className="NewGame">
+        <div className="NewIcon">🎮</div>
+        <div className="text-night-100 text-4xl">Nuevo jugador</div>
+        <div className="inputs">
           <label>Elige un nombre o apodo</label>
           <input type="text" placeholder="https://twitter.com/YourAccount" />
           <label>Elige tu ciudad inicial</label>
@@ -17,7 +17,7 @@ export default function NewGame() {
         </div>
       
       <div
-        class="CreateAcc"
+        className="CreateAcc"
         type="submit"
       >
         {/*onClick={() => tx(writeContracts.YourContract.registerUser(name, hometown, country))} */}

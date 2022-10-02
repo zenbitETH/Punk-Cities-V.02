@@ -17,20 +17,20 @@ const VerifyModal = ({ isOpen, handleClose }) => {
         >
         <Dialog.Overlay className="fixed inset-0 bg-black/70 dark:bg-black/80">      
             <div className="h-screen xl:m-24 rounded-lg xl:px-4 text-center text-white align-middle">
-            <div class="VerifyPl">
-                <div class="NewIcon">👍🏽</div>
-                <div class="text-3xl">Verificar lugar</div>
-              <div class="text-left text-xl">
-                <div class="mt-3">Tipo de lugar: <span class="verifyText"> test{/*ipfsResponse?.attributes[0].value*/}</span></div>
-                <div class="mt-3">Nombre: <span class="verifyText"> test{/*ipfsResponse?.name*/}</span></div>  
-                <div class="mt-3">Dirección: <span class="verifyText"> test{/*ipfsResponse?.address*/}</span></div>
-                <div class="mt-3">Ciudad: <span class="verifyText"> test</span></div>
-                <div class="mt-3">Etiquetas: <span class="verifyText"> test{/*ipfsResponse?.tag*/}</span></div>
-                <div class="mt-3">Registrado por: <span class="verifyText"> test{/*register*/}</span></div>
-                <div class="text-center text-base mt-5">Sube una foto del lugar<input type="file"/></div>
-                <div class="text-center">
+            <div className="VerifyPl">
+                <div className="NewIcon">👍🏽</div>
+                <div className="text-3xl">Verificar lugar</div>
+              <div className="text-left text-xl">
+                <div className="mt-3">Tipo de lugar: <span className="verifyText"> test{/*ipfsResponse?.attributes[0].value*/}</span></div>
+                <div className="mt-3">Nombre: <span className="verifyText"> test{/*ipfsResponse?.name*/}</span></div>  
+                <div className="mt-3">Dirección: <span className="verifyText"> test{/*ipfsResponse?.address*/}</span></div>
+                <div className="mt-3">Ciudad: <span className="verifyText"> test</span></div>
+                <div className="mt-3">Etiquetas: <span className="verifyText"> test{/*ipfsResponse?.tag*/}</span></div>
+                <div className="mt-3">Registrado por: <span className="verifyText"> test{/*register*/}</span></div>
+                <div className="text-center text-base mt-5">Sube una foto del lugar<input type="file"/></div>
+                <div className="text-center">
                     Elige tu recompensa por verificar:
-                  <select class="text-night-100 text-base" id="TypeOfPlace" type="text" placeholder="Park">
+                  <select className="text-night-100 text-base" id="TypeOfPlace" type="text" placeholder="Park">
                     <option disabled selected>
                       ¿Energia Solarpunk o Chips Cyberpunk?
                     </option>
@@ -40,12 +40,12 @@ const VerifyModal = ({ isOpen, handleClose }) => {
                 </div>
                 
               </div>
-          {/* <label class="file">
+          {/* <label className="file">
             Take and upload a photo to IPFS
             <input type="file" />
-            <div class="UploadBt"> Upload to IPFS</div>
+            <div className="UploadBt"> Upload to IPFS</div>
           </label> */}
-          <div class="CreateAcc" type="submit">
+          <div className="CreateAcc" type="submit">
             Verificar lugar
           </div>
       </div>

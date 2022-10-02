@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.joinBG {
+  @apply 
+  bg-glass-100 rounded-lg p-5 
+  cursor-pointer hover:bg-solar-100 hover:text-night-100 hover:animate-pulse
+}
+
+.homeIcon {
+  @apply
+  text-8xl
+  py-10
+}
+
+/* Hud */ 
+.top-hud { 
+  @apply xl:mx-40 qhd:mx-96 
+  mx-5 fixed grid  grid-cols-3 grid-rows-2 items-center top-0 left-0 right-0
+  rounded-b-lg
+  font-exo
+  text-white
+  text-sm
+  md:text-xl lg:text-2xl xl:text-2xl xl:grid-cols-4
+  border-none
+  z-20
+}
+
+.hud-wallet {
+  @apply p-1 
+  bg-glass-100 text-white text-center
+  col-span-3
+  xl:col-span-1 xl:rounded-bl-lg
+  hover:bg-glass-500
+  border-none
+  cursor-pointer
+  px-10
+}
+
+.hud1 {
+  @apply p-1 
+  bg-glass-100 text-center
+  rounded-bl-lg
+  xl:rounded-none
+  border-none
+  hover:bg-glass-500
+  cursor-pointer
+}
+
+.hud2 {
+  @apply p-1 
+  bg-glass-100 text-center
+  border-none
+  hover:bg-glass-500
+  cursor-pointer
+}
+
+.hud3 {
+  @apply p-1 
+  bg-glass-100 text-center
+  border-none
+  hover:bg-glass-500
+  cursor-pointer
+  rounded-br-lg
+}
+
+.left-hud { 
+  @apply
+  fixed grid grid-cols-2 fhd:grid-cols-1 fhd:grid-rows-3 items-center 
+  bottom-0 fhd:bottom-auto fhd:top-20 left-0
+  font-exo
+  font-medium
+  text-white
+  text-sm
+  md:text-xl lg:text-2xl xl:text-2xl 
+  border-none
+}
+
+.huda {
+  @apply p-1 
+  bg-glass-100 text-center text-white
+  hover:bg-glass-500
+  border-none
+  fhd:rounded-tr-lg
+  cursor-pointer
+  px-3
+}
+
+.hudb {
+  @apply p-1 
+  bg-glass-100 text-center text-white
+  border-none
+  cursor-pointer
+  rounded-tr-lg
+  fhd:rounded-none
+  fhd:rounded-br-lg
+  hover:bg-glass-500
+  px-3
+}
+
+.right-hud { 
+  @apply
+  fixed grid grid-cols-2 fhd:grid-cols-1 fhd:grid-rows-3 items-center
+  bottom-0 fhd:bottom-auto fhd:top-20 right-0
+  rounded-b-lg
+  font-exo
+  font-medium
+  text-white
+  text-sm
+  md:text-xl lg:text-2xl xl:text-2xl 
+  border-none
+}
+
+.hudc {
+  @apply p-1 
+  bg-glass-100 text-center
+  border-none
+  rounded-none
+  rounded-tl-lg
+  hover:bg-glass-600
+  cursor-pointer
+  px-3
+  xl:pr-5
+}
+
+.hudd {
+  @apply p-1 
+  bg-glass-100 text-center
+  border-none
+  hover:bg-glass-600
+  cursor-pointer
+  xl:rounded-bl-lg
+  px-3
+  xl:pr-5
+}
+
+.bigIcon {
+  @apply
+  text-xl text-center
+  fhd:text-5xl
+  xl:py-3
+}
+
+.NewGame {
+ @apply
+ bg-solar-100
+ mx-5 md:max-w-2xl md:mx-auto mt-12 p-10 rounded-lg
+ text-center text-2xl font-exo content-center	
+ m-5
+}
+
+.NewIcon {
+  @apply
+  xl:text-8xl text-2xl
+  m-5
+}
+
+.inputs {
+  @apply
+  grid grid-cols-1 gap-2
+  my-5
+  text-base
+}
+
+label {
+  @apply
+  text-left mt-3 md:text-2xl
+}
+
+select {
+  @apply 
+  rounded-tl-lg rounded-r-lg py-5 px-5 md:text-xl
+}
+
+input {
+  @apply
+  rounded-tl-lg rounded-r-lg py-5 px-5 md:text-xl
+}
+
+.CreateAcc {
+  @apply 
+  bg-night-100
+  p-3 mt-10
+  rounded-lg
+  text-solar-100
+  hover:bg-cyber-100 hover:text-white hover:cursor-pointer
+}
+
+.UpdateBT {
+  @apply 
+  bg-night-100
+  p-3 mt-10
+  rounded-lg
+  text-white
+  hover:bg-solar-100 hover:text-night-100 hover:cursor-pointer
+}
+
+.DetailBT {
+  @apply 
+  bg-night-100
+  max-h-16 p-5
+  rounded-lg
+  text-white text-xl
+  hover:bg-cyber-100 hover:text-white hover:cursor-pointer
+}
+
+.NewPlace {
+  @apply
+  bg-cyber-100
+  mx-5 md:max-w-2xl md:mx-auto mt-12 p-10 rounded-lg
+  text-center text-2xl font-exo content-center	
+  m-5
+ }
+
+ .MyPlaces {
+  @apply
+  bg-solar-100
+  xl:min-h-[600px] fhd:min-h-[600px] p-5 rounded-lg xl:rounded-none xl:rounded-l-lg
+  text-center text-2xl font-exo 
+  grid grid-cols-2 xl:grid-cols-3 gap-2 xl:grid-rows-4 xl:gap-3
+ }
+
+ .MyPlaces2 {
+  @apply
+  bg-cyber-100
+  xl:min-h-[600px] fhd:min-h-[600px] p-5 rounded-lg xl:rounded-none xl:rounded-r-lg
+  text-center text-2xl font-exo content-center	
+  grid grid-cols-2 xl:grid-cols-3 gap-2 xl:grid-rows-4 xl:gap-3
+ }
+
+ .AllPlaces {
+  @apply
+  bg-gray-500
+  xl:min-h-[600px] qhd:min-h-[1200px] p-5 rounded-lg
+  text-center text-2xl font-exo content-center	
+  grid grid-cols-2 md:grid-cols-4 fhd:grid-cols-7 qhd:grid-cols-10 qhd:grid-rows-6 gap-2 xl:grid-rows-4 xl:gap-3
+ }
+
+ .PlaceDetail {
+  @apply
+  grid grid-cols-10 grid-rows-6
+  xl:mx-40 rounded-lg p-5 font-exo text-center text-white
+ }
+
+.Quest {
+  @apply
+  bg-night-100
+  rounded-lg
+  min-h-[150px] 
+  xl:min-h-[150px]
+  text-2xl text-white
+  content-center
+  p-6
+}
+
+.CityPL {
+ @apply
+ bg-glass-100 hover:bg-night-100
+ min-h-[150px]
+ xl:min-h-[150px]
+ rounded-lg
+ relative
+ cursor-pointer
+}
+
+.PLfooter {
+  @apply
+  absolute bottom-0
+  grid grid-cols-3
+  bg-night-100
+  rounded-b-lg
+  px-2 py-2
+  w-full
+  text-base text-white
+}
+
+.PLheader {
+  @apply
+  grid grid-cols-6
+  text-lg
+  text-white
+}
+
+.VerifyPl {
+  @apply
+  bg-solar-500 text-night-100
+  mx-5 md:max-w-2xl md:mx-auto mt-12 p-10 rounded-lg
+  text-center text-2xl font-exo content-center	
+  m-5
+}
+
+.UpgradePl {
+  @apply
+  bg-cyber-100 text-white
+  mx-5 md:max-w-2xl md:mx-auto mt-12 p-10 rounded-lg
+  text-center text-2xl font-exo content-center	
+  m-5
+}
+
+.verifyText {
+  @apply
+  text-cyber-100 animate-pulse
+  text-3xl
+}
