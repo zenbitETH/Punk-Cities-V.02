@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.zenbit {
+    @apply
+    fixed left-1/2 -translate-x-1/2
+    bottom-3 cursor-pointer hover:text-solar-100
+    hover:drop-shadow-xl 
+    
+}

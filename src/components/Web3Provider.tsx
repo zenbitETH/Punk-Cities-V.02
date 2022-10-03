@@ -16,7 +16,7 @@ const Web3Provider = ({ children }) => {
 
 	return (
 		<WagmiConfig client={client}>
-			<ConnectKitProvider mode={resolvedTheme as 'light' | 'dark'}>{children}</ConnectKitProvider>
+			<ConnectKitProvider >{children}</ConnectKitProvider>
 		</WagmiConfig>
 	)
 }
