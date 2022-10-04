@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import '../styles/Hud.css'
+import '../styles/globals.css'
 import { ThemeProvider } from 'next-themes'
 import Web3Provider from '@/components/Web3Provider'
 

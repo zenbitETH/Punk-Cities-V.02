@@ -10,23 +10,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   position: relative;
   display: inline-block;
-  padding: 14px 24px;
-  background: #aaa6a1;
-  font-size: 26px;
-  font-weight: 500;
-  border-radius: 10rem;
   
-
-  transition: 200ms ease;
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 40px -6px #fdb04e;
-	background: #fdb04e;
-  }
-  &:active {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 32px -6px #fdb04e;
-  }
 `;
 
 

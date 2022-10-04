@@ -1,11 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .zenbit {
-    @apply
-    fixed left-1/2 -translate-x-1/2
-    bottom-3 cursor-pointer hover:text-solar-100
-    hover:drop-shadow-xl 
-    
+  @apply
+  fixed left-1/2 -translate-x-1/2
+  bottom-3 cursor-pointer hover:text-solar-100
+  hover:drop-shadow-xl 
+}
+
+
+/* Hud */ 
+.left-hud, .top-hud { 
+  @apply 
+  fixed z-20 
+  grid  items-center border-none
+  text-white text-sm 
+  md:text-xl lg:text-2xl 
+}
+
+.left-hud {
+  @apply
+  
+  grid-cols-3
+  bottom-0 xl:top-0 xl:bottom-auto
+  left-1/2 -translate-x-1/2 
+  xl:left-0 xl:translate-x-0
+}
+
+.top-hud {
+  @apply
+  top-0
+  left-0
+  xl:left-1/2 xl:-translate-x-1/2
+  grid-cols-3
+}
+
+.hud1, .hud2, .hud3, .hud4, .hud5, .hud6, .hudWallet {
+  @apply py-5 px-5 
+  bg-cyber-900 hover:bg-cyber-100 dark:bg-glass-200 dark:hover:bg-solar-100 text-center
+  border-none
+  dark:hover:text-night-100 hover:shadow-lg hover:shadow-solar-100/40
+  cursor-pointer
+}
+
+.hudWallet {
+  @apply
+  fixed top-0 right-0 px-10 grid items-center py-5 rounded-bl-3xl text-white md:text-xl lg:text-2xl 
+}
+
+.hud1 {
+  @apply
+  rounded-tl-3xl xl:rounded-none
+}
+
+.hud3 {
+  @apply
+  rounded-tr-3xl xl:rounded-none xl:rounded-br-3xl
+}
+
+.hud4 {
+  @apply
+  xl:rounded-bl-3xl
+}
+
+.hud6 {
+  @apply 
+  rounded-br-3xl
 }

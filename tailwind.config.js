@@ -68,6 +68,11 @@ module.exports = {
 					800: "#4a5b5c",
 					900: "#515555",
 				},
+				night: {
+					300: "#014875",
+					200: "#01304E",
+					100: "#192024",
+				},
 
 
 			},
@@ -75,9 +80,9 @@ module.exports = {
 				88: "22rem",
 			},
 			screens: {
-				'2xl': '1800px',
-				'xl': '1200px',
-				'md': '900px',
+				'fhd': '1920px',
+				'qhd': '2560px',
+				'uhd': '3840px',
 			  },
 			borderRadius: {
 				'dc': '12px',
@@ -87,8 +92,10 @@ module.exports = {
 				'but': '52px',
 			},
 			fontFamily: {
-				ar: ['Archivo'],
-				k2: ['K2D'],
+				Poppins: ["Poppins, sans-serif"],
+				exo: ['"Exo 2"'],
+				lex: ['"Lexend"'],
+				bal: ['"Baloo 2"'],
 			},
 			container: {
 				center: true,
