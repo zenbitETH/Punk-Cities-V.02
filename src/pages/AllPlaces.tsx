@@ -1,4 +1,3 @@
-import Layout from "../components/layout";
 import Image from "next/image"
 import tridi from "../assets/3dAssets/11-Library.png"
 import Link from 'next/link'
@@ -7,7 +6,7 @@ export default function AllPlaces() {
   
 
   return (
-    <Layout className="text-center content-center">
+    <div className="card0 text-center content-center">
         <div className="grid xl:mx-40 xl:gap-0 mx-5 gap-5 mt-10">
             <div className="AllPlaces">
               <div className="Quest">
@@ -45,6 +44,6 @@ export default function AllPlaces() {
               */}
             </div>
         </div>
-    </Layout>
+    </div>
   )
 }
