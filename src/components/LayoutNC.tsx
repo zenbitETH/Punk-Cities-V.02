@@ -21,15 +21,15 @@ export default function LayoutNC() {
     </div>*/
     <div className="">
       <div className="left-hud">
-        <Link href={``}>
+        <Link href="/NewPlace">
           <div className="hud1">Create</div>
         </Link>
     
-        <Link href={``}>
+        <Link href="/AllPlaces">
           <a className="hud2">Collect</a>
         </Link>    
        
-        <Link href={``}>
+        <Link href="/NewGame">
           <a className="hud3">Ride</a>
         </Link>
       </div>

@@ -42,7 +42,7 @@
   @apply py-5 px-5 
   bg-cyber-900 hover:bg-cyber-100 dark:bg-glass-200 dark:hover:bg-solar-100 text-center
   border-none
-  dark:hover:text-night-100 hover:shadow-lg hover:shadow-solar-100/40
+  dark:hover:text-night-100 hover:shadow-lg hover:shadow-cyber-100/40 dark:hover:shadow-solar-100/40
   cursor-pointer
 }
 
@@ -70,3 +70,5 @@
   @apply 
   rounded-br-3xl
 }
+
+
