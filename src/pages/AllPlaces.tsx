@@ -6,11 +6,10 @@ export default function AllPlaces() {
   
 
   return (
-    <div className="card0 text-center content-center">
-        <div className="grid xl:mx-40 xl:gap-0 mx-5 gap-5 mt-10">
-            <div className="AllPlaces">
+    <div className="card0 w-full text-center content-center">
+        <div className="AllPlaces col-span-12 mx-5 gap-5">
               <div className="Quest">
-                <div className="text-7xl pb-3">🌎</div>Todos los lugares
+                <div className="text-7xl pb-3">🌎</div>All places
               </div>
               <Link href={"./PlaceDetail"}>
                 <div className="CityPL">
@@ -43,7 +42,6 @@ export default function AllPlaces() {
               ))}
               */}
             </div>
-        </div>
     </div>
   )
 }
