@@ -1,15 +1,13 @@
-import Layout from "../components/Layout";
 
 export default function NewPlace() {
     
   return (
-    <Layout className="text-center content-center">
-      <div className="NewPlace">
-        <div className="NewIcon">⛲</div>
-        <div className="text-white text-4xl">Nuevo lugar</div>
-          <div className="inputs">
-            <label className="text-white" for="TypeOfPlace">¿Qué tipo de lugar quieres registrar?</label>
-            <select id="TypeOfPlace" type="text" placeholder="Park" >
+    <div className="card0 px-5 max-w-3xl ">
+      <div className="col-span-12 row-span-5 text-center rounded-3xl p-5">
+        <div className="text-white text-4xl mb-10">⛲ Nuevo lugar</div>
+          <div className="text-left text-xl">
+            <label className="text-white">¿Qué tipo de lugar quieres registrar?</label>
+            <select id="TypeOfPlace" placeholder="Park"  className="bg-white mb-5 pl-5 text-black w-full rounded-dd px-6 py-3 mt-2 ">
               <option disabled selected>El lugar que quiero regisrtrar es...</option>
               <option>⛲ Parque Público</option>
               <option>🛹 Skate Park</option>
@@ -28,13 +26,13 @@ export default function NewPlace() {
               <option>🗳️ Oficina de gobierno</option>
             </select>
             <label className="text-white">¿Cúal es el nombre del lugar?</label>
-            <input type="text" placeholder="Conocemos este lugar como..." />
+            <input type="text" placeholder="Conocemos este lugar como..."  className="formInput mt-2 mb-5"/>
             <label className="text-white">¿Cual es la dirección del lugar?</label>
-            <input type="text" placeholder="Pega la dirección de goolge maps"  />
+            <input type="text" placeholder="Pega la dirección de goolge maps"   className="formInput mt-2 mb-5"/>
             <label className="text-white">Elige etiqutas de las actividades en este lugar</label>
-            <input type="text" placeholder="Ciclismo, Clases de arte, Familia" />
+            <input type="text" placeholder="Ciclismo, Clases de arte, Familia"  className="formInput mt-2 mb-5"/>
             <label className="text-white"> ¿Qué recompensa prefieres?</label>
-            <select id="TypeOfPlace" type="text" placeholder="Park">
+            <select id="TypeOfPlace" placeholder="Park" className="formInput mt-2 mb-5 text-night-100">
               <option disabled selected>
               ⚡ Energia Solarpunk o 💽 Chips Cyberpunk
               </option>
@@ -42,11 +40,12 @@ export default function NewPlace() {
               <option>¡Quiero chips! (+1💽)</option>
             </select>
           </div>
-          <div className="CreateAcc hover:bg-solar-100" type="submit" >
-            Registrar lugar
-          </div>
       </div>
-    </Layout>
+      <div className="col-span-12 text-center mb-10">
+        {/*onClick={() => tx(writeContracts.YourContract.registerUser(name, hometown, country))} */}
+        <div className="formBT">Registrar lugar</div>
+      </div>
+    </div>
   )
 }
 

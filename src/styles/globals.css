@@ -3,3 +3,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.card0, .projectCard {
+    @apply
+    mx-5 md:mx-96 py-5 
+    bg-cyber-900 dark:bg-glass-200
+    rounded-gen
+    grid grid-rows-6 
+    my-20 xl:my-0 h-[fit] xl:h-[80vh]
+}
+
+.card0 {
+    @apply
+    xl:grid-rows-1
+    grid-cols-12
+}
+
+.formInput {
+    @apply 
+    placeholder:italic px-6 py-3  w-full border-solar-100 mx-auto rounded-dd bg-white
+}
+
+.formBT {
+    @apply 
+    bg-solar-900 dark:hover:bg-solar-100 hover:bg-cyber-100
+    dark:hover:text-night-100 hover:text-white
+    cursor-pointer w-1/4 mx-auto py-3 text-xl rounded-3xl
+}
